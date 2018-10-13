@@ -9,8 +9,7 @@ bot = commands.Bot(command_prefix ='#')
 async def on_message(message):
     if message.author==bot.user:
         return
-    if(message.startswith("!@#test"):
-        await bot.send_message(bot.get_channel('360089608685355011'),"on")
+    
     
     
 @bot.event

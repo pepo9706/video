@@ -1,10 +1,7 @@
 import discord 
 from discord.ext import commands
 import time
-
-
-api = str(os.environ.get("RIOT_KEY"))
-
+import os
 
 bot = commands.Bot(command_prefix ='#')
 
@@ -35,4 +32,4 @@ async def on_ready():
 
 
 
-bot.run(str(os.environ.get("TOKEN"))
+bot.run(os.environ["TOKEN"])

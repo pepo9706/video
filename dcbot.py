@@ -30,4 +30,4 @@ async def on_ready():
 
 
 
-bot.run("NTAwNTkwNzk1NzYyNTY1MTI2.DqNDYw.tgJzIPfOAF72JYVK3YiYjBxIwb0")
+bot.run(os.getenv("TOKEN"))

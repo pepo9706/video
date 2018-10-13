@@ -32,4 +32,4 @@ async def on_ready():
 
 
 
-bot.run(os.environ["TOKEN"])
+bot.run(process.env.TOKEN)

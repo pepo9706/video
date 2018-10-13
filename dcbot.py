@@ -18,6 +18,7 @@ async def on_member_join(member):
     if(name.find("discord.gg/") >-1):
         print("contains")
         await bot.ban(member,delete_message_days=6)
+        print(member+" was banned")
         time.sleep(2)
         await bot.purge_from(bot.get_channel('360089937611325441'), limit=2)
         await bot.send_message(bot.get_channel('360089937611325441'), "Spoko prioteli nqkav random gei iskashe da reklamira server no az vi protectnah ot tozi gei")

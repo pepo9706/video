@@ -15,7 +15,7 @@ async def on_message(message):
 @bot.event
 async def on_member_join(member):
     name = member.name
-    if(name.find("discord.gg/") >-1 or name.find("twitter.com/") >-1 or name.find("twitch.tv/") >-1):
+    if(name.find("discord.gg/") >-1 or name.find("twitter.com/") >-1 or name.find("twitch.tv/") >-1 or name.find(" discord.me/") > -1):
         print("contains")
         await bot.send_message(member, 'Gori v moita banq retard umrql , dano da hvanesh rak i da umresh v kalta ,pedal qj kur')
         time.sleep(1)

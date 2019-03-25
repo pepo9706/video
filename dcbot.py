@@ -10,7 +10,8 @@ async def on_message(message):
     if message.author==bot.user:
         return
     if "discord.gg/" in message.content:
-        await bot.purge_from(bot.get_channel('556922526572216333'), limit=1)
+        await bot.purge_from(bot.get_channel('323779754513924106'), limit=1)
+        time.sleep(1)
         await bot.send_message(message.channel, message.author+" shte te vkaram v banq :) laino")
     
     
@@ -25,9 +26,9 @@ async def on_member_join(member):
         await bot.ban(member,delete_message_days=6)
         print(name+" was banned")
         time.sleep(3)
-        await bot.purge_from(bot.get_channel('360089937611325441'), limit=2)
+        await bot.purge_from(bot.get_channel('323785237639200769'), limit=2)
         time.sleep(3)
-        await bot.send_message(bot.get_channel('360089937611325441'), "Spoko prioteli nqkav random gei iskashe da reklamira server no az vi protectnah ot tozi gei")
+        await bot.send_message(bot.get_channel('323785237639200769'), "Spoko prioteli nqkav random gei iskashe da reklamira server no az vi protectnah ot tozi gei")
         
 
 

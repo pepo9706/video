@@ -13,7 +13,7 @@ async def on_message(message):
         await bot.purge_from(bot.get_channel('323779754513924106'), limit=1)
         time.sleep(1)
         await bot.send_message(message.channel, message.author.mention+(" shte te vkaram v banq :) laino"))
-        role = bot.get(message.server.roles, name='Silenced')
+        role = discord.utils.get(message.server.roles, name='Silenced')
         await bot.add_roles(message.author, role)
     
     

@@ -12,7 +12,7 @@ async def on_message(message):
     if "discord.gg/" in message.content:
         await bot.purge_from(bot.get_channel('323779754513924106'), limit=1)
         time.sleep(1)
-        await bot.send_message(message.channel, message.author+" shte te vkaram v banq :) laino")
+        await bot.send_message(message.channel, message.author.join(" shte te vkaram v banq :) laino"))
     
     
     

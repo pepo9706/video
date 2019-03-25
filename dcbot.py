@@ -9,8 +9,9 @@ bot = commands.Bot(command_prefix ='#')
 async def on_message(message):
     if message.author==bot.user:
         return
-    if(message.content.find("discord.gg/") > -1)
+    if "discord.gg/" in message.content:
         await bot.purge_from(bot.get_channel('556922526572216333'), limit=1)
+        await bot.send_message(message.channel, message.author+" shte te vkaram v banq :) laino")
     
     
     
